@@ -1,0 +1,19 @@
+<h1> Authors </h1>
+
+<table class="table table-striped">
+    <tr>
+        <th>Name</th>
+        <th>Email Address</th>
+        <th>Edit</th>
+        <th>Delete</th>
+    </tr>
+
+<% authors.forEach(function(author){ %> 
+    <tr>
+        <td><a href="/author/detail?id=<%= author._id %>"><%= author.name %> </a></td>
+        <td><%= author.emailAddress %></td>
+        <td><a href="/author/edit?id=<%= author._id %>">Edit</a></td>
+        <td><a href="/author/delete?id=<%= author._id %>">Delete</a></td>
+    </tr>
+<% }) %>
+</table>

@@ -1,0 +1,24 @@
+.grid-wrapper {
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+}
+
+.grid {
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-wrap: wrap;
+    height: 600px;
+    width: 600px;
+}
+
+.grid div {
+    border: 1px solid grey;
+    height: 9.7%;
+    width: 9.7%;
+}
+
+.grid div.pika {
+    background-image: url('https://preview.redd.it/uomf0s4nnq341.gif?format=png8&s=6dde74818685e82411617ae5f69852027f74e553');
+    background-size: cover;
+}

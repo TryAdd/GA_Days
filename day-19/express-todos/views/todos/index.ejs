@@ -1,0 +1,12 @@
+<%- include('../partials/header') %>
+        <ul>
+          <% todos.forEach(function(t) { %>
+            <li>
+              <a href="/todos/<%= t.id %>"><%= t.todo %></a>
+                - 
+              <%= t.done ? 'done' : 'not done' %>
+            </li>
+          <% }); %>
+        </ul>
+        
+        <%- include('../partials/footer') %>

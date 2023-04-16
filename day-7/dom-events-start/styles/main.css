@@ -1,0 +1,88 @@
+/* * General styles */
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+section {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 80px 0;
+}
+
+h1, h2 {
+  text-align: center;
+  color: orangered;
+}
+
+/* * Click styles */
+
+button {
+  padding: 20px;
+  font-weight: bold;
+  color: white;
+  background-color: red;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.button-blue {
+  background-color: blue;
+}
+
+/* * Hover styles */
+
+img {
+  cursor: pointer;
+}
+
+/* * Submit styles */
+
+form {
+  width: 400px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+input[type="text"] {
+  display: block;
+  margin-bottom: 10px;
+  border: 2px solid orangered;
+  padding: 10px;
+  width: 100%;
+}
+
+input[type="submit"] {
+  width: 100%;
+  height: 40px;
+  background-color: orangered;
+  color: white;
+  cursor: pointer;
+}
+
+/* * Change styles  */
+
+select {
+  background-color: white;
+  border: 2px solid orangered;
+  color: orangered;
+  width: 400px;
+  padding: 10px;
+  height: 40px;
+}
+
+/*  * Multi events */
+
+.animal-btn {
+  font-size: 40px;
+}
+

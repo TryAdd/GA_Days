@@ -1,0 +1,51 @@
+.ball{
+    background-color: #2ed;
+    width: 100px;
+    height: 100px;
+    border-radius: 100%;
+    animation: bounce 3s cubic-bezier(.17,.67,.83,.67) infinite;
+    position: absolute;
+}
+
+@keyframes bounce {
+    0%{
+        bottom: 100%;
+    }
+    25%{
+        bottom: 0;
+        height: 100px;
+        width: 100px;
+    }
+    30% {
+        bottom: 0;
+        height: 50px;
+        width: 110px;
+        background-color: green;
+    }
+
+    35% {
+        bottom: 0;
+        width: 100px;
+        height: 100px;
+    }
+    50%{
+        background-color: yellow;
+    }
+
+    70% {
+        bottom: 100%;
+        background-color: black;
+
+    }
+
+    100% {
+        bottom: 100%;
+    }
+}
+
+@keyframes move {
+    0%{
+        left: 20%;
+    }
+    
+}

@@ -1,0 +1,35 @@
+/* body{
+    background: #000;
+    color: red;
+}*/
+a{
+    text-decoration: none;
+    color: #2ed;
+}
+
+a:hover{
+    color: red;
+}
+
+/* 
+body{
+    background: black;
+    color: #255F85;
+}
+
+a{
+    text-decoration: none;
+}
+
+input , textarea,button{
+    margin: 4px;
+    text-decoration: none;
+    border: 2px solid darkblue;
+    background-color: #255F85;
+
+}
+
+form{
+    justify-content: center;
+}
+ */

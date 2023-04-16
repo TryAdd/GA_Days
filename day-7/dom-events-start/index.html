@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DOM Events</title>
+  <link rel="stylesheet" href="styles/main.css">
+  <script src="scripts/app.js"></script>
+</head>
+<body>
+  <h1>DOM EVENTS</h1>
+  <hr>
+  <h2>CLICK EVENT</h2>
+  <hr>
+  <section>
+    <button id="button">
+      Click Me
+    </button>
+    <p>the button is: <span id="button-color-span">red</span></p>
+  </section>
+  <hr>
+  <h2>HOVER EVENT</h2>
+  <hr>
+  <section>
+    <div>
+      <img id="hover-img" src="https://images.unsplash.com/photo-1564865878688-9a244444042a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80" alt="hover-image" width="400px"/>
+    </div>
+  </section>
+  <hr>
+  <h2>SUBMIT EVENT</h2>
+  <hr>
+  <section>
+    <form id="form">
+      <div>
+        <label for="username">Username</label>
+        <input type="text" id="username">
+      </div>
+      <div>
+        <label for="email">Email</label>
+        <input type="text" id="email">
+      </div>
+      <div>
+        <input type="submit" value="Submit">
+      </div>
+    </form>
+  </section>
+  <hr>
+  <h2>CHANGE EVENT</h2>
+  <hr>
+  <section>
+    <div>
+      <select id="select">
+        <option disabled selected>-------</option>
+        <option value="apple">🍎</option>
+        <option value="grapes">🍇</option>
+        <option value="pear">🍐</option>
+        <option value="peach">🍑</option>
+        <option value="strawberry">🍓</option>
+      </select>
+      <p>Selected Option: <span id="selected"></span></p>
+    </div>
+  </section>
+  <hr>
+  <h2>EVENT ON MULTIPLE ELEMENTS</h2>
+  <hr>
+  <section>
+    <div>
+      <button class="animal-btn" value="moo">🐮</button>
+      <button class="animal-btn" value="roar">🦁</button>
+      <button class="animal-btn" value="oink">🐷</button>
+    </div>
+    <p>The animal says: <span id="speak"></span></p>
+  </section>
+  <hr>
+  <section>
+    <label class="switch">
+      <input type="checkbox">
+      <span class="slider round"></span>
+    </label>
+  </section>
+</body>
+</html>

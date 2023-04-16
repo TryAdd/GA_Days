@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            //p hide on click
+            $('p').click(function () {
+                $(this).hide()
+            })
+            //title hide on click
+            $('#title').click(function () {
+                $(this).hide()
+            })
+            //show alert on mouseenter in the top text
+            // $('.top-text').mouseenter(function () {
+            //     alert('You put your mouse on top text')
+            // })
+            //hide all p button click
+            $('.hide').click(function () {
+                $('p').hide(5000)
+            })
+            //show all p button click
+            $('.show').click(function () {
+                $('p').show(5000)
+            })
+            //toggle button
+            $('#toggle-btn').click(function () {
+                $('#toggle-text').fadeToggle(2800)
+            })
+            //animate
+            $('#animate').click(function () {
+                const div = $('div')
+                div.animate({ height: '300px', opacity: '0.5' }, 3000)
+                div.animate({ width: '300px', opacity: '1' }, 3000)
+            })
+            //appending element
+            $('#add-elem').click(function () {
+                $('p').append('<b>This is appended</b>')
+                $('p').prepend('<b>This is prepended</b>')
+                $('p').before('<b>This is before</b>')
+                $('p').after('<b>This is after</b>')
+            })
+            //removing element
+            $('#remove-elem').click(function(){
+                $('p').remove('.top-text');
+            });
+
+        })
+    </script>
+
+    <title>jQuery</title>
+</head>
+
+<body>
+    <h1 id="title">This is the title!</h1>
+    <p class="top-text">Click me and see What happens</p>
+    <p>HEY! CLICK ME TOO!!!</p>
+    <p>DONT FORGET ME!!!!!</p>
+    <button class="hide">Hide</button>
+    <button class="show">Show</button>
+    <br />
+    <button id="toggle-btn">Toggle Between Hide and Show</button>
+    <p id="toggle-text">I will Toggle</p>
+    <button id="animate">Animate Things</button>
+    <br><br>
+    <div style="background:blue;height:100px;width:100px"></div>
+    <br>
+    <button id="add-elem">Add an element</button>
+    <br> <br>
+    <button id="remove-elem">Remove top text</button>
+</body>
+
+</html>

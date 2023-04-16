@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Here's the todo list: </h1>
+    <ul>
+        <% todos.forEach(function(t){ %>
+            <li>
+                <%= t.todo %>
+                -
+                <%= t.done ? 'Done Sir :|' : 'Nope, not Done' %>
+            </li>
+            <% }) %>
+    </ul>
+</body>
+</html>
+
+
+
+<!-- wsh swena hne: nadena nadena each to do key b3den swena dash nf9l benhm
+     b3den swena mthl statemint lma 97 y6l5 swet 97 a4a 3'l6 y6l3 3'l6 < % is baskly 
+    for write same js fe ejs file its same return y3ne -->
+
+    <!-- oh ye also to put comment inide ejs is t76 < % # ml98en -->
+
+    <!-- yba lek tchof npmjs.com  -->
+
+    

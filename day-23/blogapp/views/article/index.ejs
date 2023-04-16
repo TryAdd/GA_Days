@@ -1,0 +1,30 @@
+<h1>Artical</h1>
+
+<table>
+    <tr>
+        <th>Title</th>
+        <th>Content</th>
+        <th>Is Published</th>
+        <th>Total Words</th>
+        <th>Author</th>
+        <th>edit</th>
+        <th>delete</th>
+    </tr>
+    <%articles.forEach(function(article) {%>
+        <tr>
+            
+            <td><a href="/article/detail?id=<%= article._id %>"><%= article.title %></a></td>
+
+            <td><%= article.content %></td>
+            <td><%= article.isPublished %></td>
+            <td><%= article.totalWords %></td>
+            <td><%= article.author[0].name %></td>
+            <td><a href="/article/edit?id=<%= article._id %>">Edit</a></td>
+            <td>
+                <form method="post" action="/article/delete?id=<%=article._id%>&_method=Delete" >
+                    <button type="submit">Delete</button>
+                </form>
+            </td>
+        </tr>
+   <%})%>
+</table>

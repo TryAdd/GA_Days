@@ -1,0 +1,22 @@
+.parent {
+    border: 2px solid black;
+    display: flex;
+    /* width: 300px; */
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: baseline;
+}
+
+.child {
+    height: 100px;
+    /* width: 100px; */
+    min-width: 100px;
+    background-color: red;
+    margin: 10px;
+}
+
+.indiv{
+    background: blue;
+    flex-grow: 2;
+}
